@@ -26,10 +26,3 @@ A aplicação funciona no terminal e permite ao usuário realizar operações ma
 
 - Python 3
 
-##  Como executar
-
-1. Certifique-se de ter o Python instalado (versão 3.10 ou superior).
-2. Execute o arquivo no terminal:
-
-```bash
-python calculadora.py
