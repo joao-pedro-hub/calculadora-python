@@ -51,6 +51,6 @@ while True:
 
 # --Próximas melhorias--
 
-# Aceitar números decimais
+
 # Melhorar validação de entrada
 # Criar versão com interface gráfica
