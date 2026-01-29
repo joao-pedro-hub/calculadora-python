@@ -36,13 +36,13 @@ while True:
     #recebe a opção digitada
     match opcao_calculadora:        
         case 1:
-                somar (float (input ('digite um numero ')),float (input ('digite outro numero ')))
+                somar (int (input ('digite um numero ')),int (input ('digite outro numero ')))
         case 2:
-                subtrair (float (input ('digite um numero ')),float (input ('digite outro numero ')))
+                subtrair (int (input ('digite um numero ')),int (input ('digite outro numero ')))
         case 3:
-                mutiplicar (float (input ('digite um numero ')),float (input ('digite outro numero ')))
+                mutiplicar (int (input ('digite um numero ')),int (input ('digite outro numero ')))
         case 4:
-                dividir (float (input ('digite um numero ')),float (input ('digite outro numero ')))
+                dividir (int (input ('digite um numero ')),int (input ('digite outro numero ')))
         case 5:
                 print ('saindo da caculadora')
                 break
