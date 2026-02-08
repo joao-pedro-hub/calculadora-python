@@ -9,7 +9,23 @@ def menu_calculadora ():
     print ('| (4) dividir            |')
     print ('| (5) sair               |')
     print ('|                        |')
-    print ('+------------------------+') 
+    print ('+------------------------+')
+def verificacao_menu():
+    while True:
+        try:
+            return int(input('escolha uma opção: '))
+        except ValueError:
+            #caso der erro por o valor não for do tipo float
+            print ('somente numeros ')
+
+def verificacao_de_numero():
+    while True:
+        try:
+            return float(input('Digite um número: '))
+        except ValueError:
+            #caso der erro por o valor não for do tipo int
+            print ('somente numeros ')
+            
 def somar (numero1,numero2):
     resposta = numero1 + numero2
     print (f'A soma entre {numero1} e {numero2} é iqual a {resposta}')
@@ -32,22 +48,24 @@ def dividir (numero1,numero2):
 while True:
     #repete o codigo até que digite 5 como opção
     menu_calculadora ()    
-    opcao_calculadora = int (input ('escolha uma opção '))
-    #recebe a opção digitada
+    opcao_calculadora = verificacao_menu()
+    #recebe a opção digitadaexcept ValueError:
     match opcao_calculadora:        
         case 1:
-                somar (int (input ('digite um numero ')),int (input ('digite outro numero ')))
+                somar (verificacao_de_numero(),verificacao_de_numero())
         case 2:
-                subtrair (int (input ('digite um numero ')),int (input ('digite outro numero ')))
+                subtrair (verificacao_de_numero(),verificacao_de_numero())
         case 3:
-                mutiplicar (int (input ('digite um numero ')),int (input ('digite outro numero ')))
+                mutiplicar (verificacao_de_numero(),verificacao_de_numero())
         case 4:
-                dividir (int (input ('digite um numero ')),int (input ('digite outro numero ')))
+                dividir (verificacao_de_numero(),verificacao_de_numero())
         case 5:
                 print ('saindo da caculadora')
                 break
         case _:
                 print ('opção invalida')
+        
+        
 
 # --Próximas melhorias--
 
