@@ -70,5 +70,5 @@ while True:
 # --Próximas melhorias--
 
 
-# Melhorar validação de entrada
+
 # Criar versão com interface gráfica
